@@ -30,7 +30,6 @@ body {
     font-family: var(--main-font);
     color: var(--secondary-font-color);
     line-height: 1.6;
-    margin: 0 0 .5em;
 }
 
 a,span,ul,li,code,button {
