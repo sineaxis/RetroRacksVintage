@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'Molle';
+    src: url('../fonts/Molle/Molle-Regular.woff2') format('woff2'),
+        url('../fonts/Molle/Molle-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Yatra One';
+    src: url('../fonts/YatraOne/YatraOne-Regular.woff2') format('woff2'),
+        url('../fonts/YatraOne/YatraOne-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--title-font);
+    color: var(--color-1);
+    line-height: 1.2;
+    margin:  0 0 .5em;
+    font-weight: 400;
+    font-style: italic;
+}
+
+body {
+    font-family: var(--main-font);
+    color: var(--secondary-font-color);
+    line-height: 1.6;
+    margin: 0 0 .5em;
+}
+
+a,span,ul,li,code,button {
+    font-family: var(--main-font);
+}
+
+h1 {
+    font-size: 2.027rem;
+}
+
+h2 {
+    font-size: 1.802rem;
+}
+
+h3 {
+    font-size: 1.603rem;
+}
+
+h4 {
+    font-size: 1.424rem;
+}
+
+h5 {
+    font-size: 1.266rem;
+}
+
+h6 {
+    font-size: 1.125rem;
+}
