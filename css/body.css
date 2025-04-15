@@ -1,0 +1,15 @@
+#aboutus {
+    background: var(--color-1) url('../img/fondoheader_sm.jpg') repeat-x center top;
+    text-align: center;
+    color: var(--main-font-color);
+    padding: 4.5em 1em;
+    h1 {
+        color: inherit;
+        margin: 0 0 1em;
+    }
+}
+
+#products {
+    padding: 4.5em 0;
+    text-align: center;
+}
