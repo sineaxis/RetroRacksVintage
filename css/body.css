@@ -12,4 +12,27 @@
 #products {
     padding: 4.5em 0;
     text-align: center;
+    text-transform: uppercase;
+}
+.products__flex {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    h2 {
+        font-size: 16px;
+    }
+    #camisas {
+        display: flex;
+        justify-content: right;
+        padding-right: 2em;
+    }
+
+    #chaquetas {
+        display: flex;
+    }
+
+    #pantalones {
+        display: flex;
+    }
+
 }
