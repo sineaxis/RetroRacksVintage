@@ -8,9 +8,8 @@
         margin: 0 0 1em;
     }
 }
-
 #products {
-    padding: 4.5em 0;
+    padding: 4em 0;
     text-align: center;
     text-transform: uppercase;
 }
@@ -25,14 +24,19 @@
         display: flex;
         justify-content: right;
         padding-right: 2em;
+        margin-top: 4em;
     }
 
     #chaquetas {
         display: flex;
+        justify-content: left;
+        padding-left: 2em;
     }
 
     #pantalones {
         display: flex;
+        justify-content: right;
+        padding-right: 2em;
     }
 
 }
