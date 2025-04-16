@@ -1,8 +1,15 @@
 footer {
     background-color: var(--color-1);
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
-    padding: 1em;
+    padding: 4.5em 1em 1em;
+    background: var(--color-1) url('../img/fondofooter_sm.jpg') repeat-x center top;
+    p {
+        color: var(--main-font-color);
+        font-size: .85em;
+    }
     nav {
         ul {
             display: flex;
@@ -16,6 +23,10 @@ footer {
                     letter-spacing: .125em;
                     font-size: .65em;
                     font-weight: bold;
+                    &:hover {
+                        color: var(--color-2);
+                        text-decoration: underline;
+                    }
                 }
             }
         }
