@@ -1,5 +1,33 @@
-main {
-    .product-list {
-        
+.product {
+    display: flex;
+
+    .card-img {
+        background-color: var(--color-1);
+        height: 189px;
+        width: 144px;
+        padding: 1em;
+        border-radius: 10px;
+        img {
+            border-radius: 10px;
+        }
+    }
+    .card-text {
+        background-color: var(--color-1);
+        width: 129px;
+        height: 138px;
+        border-radius: 10px;
+        .tallas {
+            display: flex;
+            column-gap: 3px;
+        }
+        .colores {
+            display: flex;
+            column-gap: 5px;
+            div {
+                background-color: blue;
+                width: 10px;
+                height: 10px;
+            }
+        }
     }
 }
