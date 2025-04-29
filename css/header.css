@@ -37,7 +37,7 @@ header {
                     font-family: var(--title-font); 
                     text-transform: uppercase;
                     text-decoration: none;
-                    color: var(--main-font-color);
+                color: var(--main-font-color);
                     letter-spacing: .125em;
                     display: flex;
                     justify-content: space-between;
