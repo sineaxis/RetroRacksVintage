@@ -1,8 +1,9 @@
-@import './reset.css';
-@import './variables.css';
-@import './typography.css';
-@import './general.css';
-@import './header.css';
-@import './body.css';
+@import "./reset.css";
+@import "./variables.css";
+@import "./typography.css";
+@import "./general.css";
+@import "./header.css";
+@import "./body.css";
 @import './products.css';
-@import './footer.css';
+@import "./contact.css";
+@import "./footer.css";
