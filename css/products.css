@@ -34,10 +34,38 @@
       .colores {
         display: flex;
         column-gap: 5px;
-        div {
-          background-color: blue;
-          width: 10px;
-          height: 10px;
+        li {
+          div {
+            background-color: blue;
+            width: 10px;
+            height: 10px;
+            cursor: pointer;
+          }
+          &:nth-of-type(2) {
+            div {
+              background-color: brown;
+            }
+          }
+          &:nth-of-type(3) {
+            div {
+              background-color: red;
+            }
+          }
+          &:nth-of-type(4) {
+            div {
+              background-color: rebeccapurple;
+            }
+          }
+          &:nth-of-type(4) {
+            div {
+              background-color: greenyellow;
+            }
+          }
+          &:nth-of-type(5) {
+            div {
+              background-color: black;
+            }
+          }
         }
       }
     }
