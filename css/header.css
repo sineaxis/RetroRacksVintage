@@ -84,3 +84,31 @@ header {
     }
   }
 }
+
+@media screen and (min-width: 769px) {
+  header {
+    nav {
+      position: static;
+      background-color: transparent;
+      box-shadow: none;
+      &.close {
+        max-height: none;
+      }
+      ul {
+        display: flex;
+        justify-content: center;
+        gap: 3.5em;
+        li {
+          a {
+            i {
+              margin: 0 0 0 1em;
+            }
+          }
+        }
+      }
+    }
+    #btn-menu {
+      display: none;
+    }
+  }
+}
