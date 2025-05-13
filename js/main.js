@@ -22,8 +22,9 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
-
+  // Comprobamos que la url tiene filtro
   const params = new URLSearchParams(window.location.search);
+  // Si tiene filtro, lo usamos
   if (params.has("filter")) {
     const filter = getFilterFromURL();
     showFilteredProducts(filter);

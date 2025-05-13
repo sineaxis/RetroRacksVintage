@@ -1,98 +1,114 @@
-.product-list {
-  padding: 1em;
-  display: flex;
-  flex-direction: column;
-  gap: 28px;
-  .product {
+.product-outer {
+  background: white url("../img/fondoheader_sm.jpg") repeat-x center top;
+  .product-list {
+    padding: 4.5em 1em 1em;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    .card-img {
-      background-color: var(--color-1);
-      height: 189px;
-      width: 144px;
-      padding: 0.5em;
-      border-radius: 10px;
-      transition: all 0.3s ease;
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+    flex-direction: column;
+    gap: 28px;
+    .product {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      .card-img {
+        background-color: var(--color-1);
+        height: 189px;
+        width: 144px;
+        padding: 0.5em;
         border-radius: 10px;
-      }
-      &:hover {
-        transform: scale(1.1);
-      }
-    }
-    .card-text {
-      background-color: var(--color-1);
-      width: 129px;
-      height: 138px;
-      border-radius: 10px;
-      padding: 0.5em;
-      .tallas {
-        display: flex;
-        column-gap: 3px;
-      }
-      .colores {
-        display: flex;
-        column-gap: 5px;
-        margin: 0 0 1em;
-        li {
-          div {
-            background-color: blue;
-            width: 10px;
-            height: 10px;
-            cursor: pointer;
-          }
-          &:nth-of-type(2) {
-            div {
-              background-color: brown;
-            }
-          }
-          &:nth-of-type(3) {
-            div {
-              background-color: red;
-            }
-          }
-          &:nth-of-type(4) {
-            div {
-              background-color: rebeccapurple;
-            }
-          }
-          &:nth-of-type(4) {
-            div {
-              background-color: greenyellow;
-            }
-          }
-          &:nth-of-type(5) {
-            div {
-              background-color: black;
-            }
-          }
-        }
-      }
-      button {
-        padding: 0.25em 1em;
-        border-radius: 6px;
-        background-color: var(--color-3);
-        cursor: pointer;
-        color: var(--color-2);
-        border: none;
-        border: 2px solid var(--color-2);
         transition: all 0.3s ease;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 10px;
+        }
         &:hover {
-          color: var(--color-3);
-          background-color: var(--color-2);
-          border-color: var(--color-3);
+          transform: scale(1.1);
+        }
+      }
+      .card-text {
+        background-color: var(--color-1);
+        width: 129px;
+        height: 138px;
+        border-radius: 10px;
+        padding: 0.5em;
+        .tallas {
+          display: flex;
+          column-gap: 3px;
+        }
+        .colores {
+          display: flex;
+          column-gap: 5px;
+          margin: 0 0 1em;
+          li {
+            div {
+              background-color: blue;
+              width: 10px;
+              height: 10px;
+              cursor: pointer;
+            }
+            &:nth-of-type(2) {
+              div {
+                background-color: brown;
+              }
+            }
+            &:nth-of-type(3) {
+              div {
+                background-color: red;
+              }
+            }
+            &:nth-of-type(4) {
+              div {
+                background-color: rebeccapurple;
+              }
+            }
+            &:nth-of-type(4) {
+              div {
+                background-color: greenyellow;
+              }
+            }
+            &:nth-of-type(5) {
+              div {
+                background-color: black;
+              }
+            }
+          }
+        }
+        button {
+          padding: 0.25em 1em;
+          border-radius: 6px;
+          background-color: var(--color-3);
+          cursor: pointer;
+          color: var(--color-2);
+          border: none;
+          border: 2px solid var(--color-2);
+          transition: all 0.3s ease;
+          &:hover {
+            color: var(--color-3);
+            background-color: var(--color-2);
+            border-color: var(--color-3);
+          }
+        }
+      }
+      &:nth-of-type(even) {
+        .card-text {
+          order: -1;
         }
       }
     }
-    &:nth-of-type(even) {
-      .card-text {
-        order: -1;
-      }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .product-outer {
+    .product-list {
+      width: 100%;
+      max-width: 1024px;
+      margin: 0 auto;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
     }
   }
 }

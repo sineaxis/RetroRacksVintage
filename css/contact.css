@@ -1,6 +1,7 @@
 #contact {
   main {
-    padding: 1em;
+    background: white url("../img/fondoheader_sm.jpg") repeat-x center top;
+    padding: 4.5em 1em 1em;
   }
   .address-block {
     background-color: var(--color-3);
