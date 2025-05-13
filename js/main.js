@@ -16,7 +16,9 @@ document.addEventListener("DOMContentLoaded", () => {
     products.forEach((product) => {
       const category = product.dataset.category;
       if (!filter || category === filter) {
-        product.style.display = "block";
+        product.style.display = "flex";
+      } else {
+        product.style.display = "none";
       }
     });
   }
