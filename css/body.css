@@ -141,10 +141,12 @@
     .products__flex {
       flex-direction: row;
       justify-content: center;
+      background-color: var(--color-2);
       .clothes__block {
         display: block;
         position: relative;
         height: 397px;
+        margin: 0;
         h3 {
           position: absolute;
           top: 50%;
