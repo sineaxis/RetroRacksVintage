@@ -21,30 +21,43 @@
     </header>
 
     <main>
-        <section class="productos">
-            <div class="producto">
-                <img src="camiseta.jpg" alt="Camiseta blanca de Zara">
-                <h3>Camiseta Blanca Zara</h3>
-                <p class="precio">€8</p>
-                <button class="btn">Ver más</button>
+        <section class="venta">
+            <div class="productoVenta">
+                <img class="fotoProducto" src="./img/venta/camisetaBlanca.jpg" alt="Camiseta blanca de Zara">
+                <div class="bloqueTexto">
+                    <h3>Camiseta Blanca Zara</h3>
+                    <p class="precio">€8</p>
+                    <button class="btn">Ver más</button>       
+                </div>
             </div>
 
-            <div class="producto">
-                <img src="pantalon.jpg" alt="Pantalón vaquero Levi's">
-                <h3>Pantalón Levi's 501</h3>
-                <p class="precio">€20</p>
-                <button class="btn">Ver más</button>
+            <div class="productoVenta">
+                <img class="fotoProducto" src="./img/venta/pantalonVaquero.jpg" alt="Pantalón vaquero Levi's">
+                <div class="bloqueTexto">
+                    <h3>Pantalón Levi's 501</h3>
+                    <p class="precio">€15</p>
+                    <button class="btn">Ver más</button>
+                </div>
             </div>
 
-            <div class="producto">
-                <img src="bolso.jpg" alt="Bolso negro de piel">
-                <h3>Bolso de Piel Negro</h3>
-                <p class="precio">€15</p>
-                <button class="btn">Ver más</button>
+            <div class="productoVenta">
+                <img class="fotoProducto" src="./img/venta/bolsoPielNegro.jpg" alt="Bolso negro de piel">
+                <div class="bloqueTexto">
+                    <h3>Bolso de Piel Negro</h3>
+                    <p class="precio">€14</p>
+                    <button class="btn" onclick="mostrarMensaje(this)">Ver más</button>
+                    <p class="mensaje">Esto es un bolso de piel negra de Cachemir diseñado y confeccionado en nuestras mejores empresas textiles.</p>
+                </div>
             </div>
             <!-- Puedes añadir más productos aquí -->
         </section>
     </main>
     <script src="./js/main.js"></script>
+    <script>
+        function mostrarMensaje(boton) {
+            const mensaje = boton.nextElementSibling; // El <p> justo después del botón
+            mensaje.style.display = "block";
+        }
+    </script>
 </body>
 </html>
