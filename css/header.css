@@ -83,6 +83,44 @@ header {
       border: none;
     }
   }
+  /* Estilos para el botón del carrito */
+  #cart-button {
+    position: relative;
+    font-size: 18px;
+    padding: 10px;
+    background-color: var(--color-2);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #cart-button:hover {
+    background-color: var(--color-3);
+  }
+
+  /* Button text change */
+  .added-to-cart {
+    background-color: #2ecc71;
+    color: white;
+  }
+
+  .added-to-cart span {
+    display: none;
+  }
+
+  .added-to-cart .added {
+    display: inline-block;
+  }
+}
+
+/* Animación para el producto volando al carrito */
+.product-added-animation {
+  position: absolute;
+  z-index: 9999;
+  pointer-events: none;
+  transition: transform 0.5s ease-out;
 }
 
 @media screen and (min-width: 769px) {
@@ -110,5 +148,18 @@ header {
     #btn-menu {
       display: none;
     }
+  }
+}
+
+/* Animación para cuando un artículo es añadido al carrito */
+@keyframes addToCartAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
   }
 }
