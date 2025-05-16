@@ -102,6 +102,7 @@
 
 @media screen and (min-width: 769px) {
   .product-outer {
+    padding: 0 0 3em;
     .product-list {
       width: 100%;
       max-width: 1024px;
@@ -109,6 +110,38 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
+      .product-filters {
+        width: 100%;
+        max-width: 1024px;
+        margin: 0 auto;
+        ul {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          li {
+            margin: 0 1em;
+            a {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 0.25em 1em;
+              text-decoration: none;
+              background-color: var(--color-2);
+              color: var(--color-3);
+              border: 2px solid var(--color-2);
+              border-radius: 12px;
+              min-width: 142px;
+              transition: all 0.3s ease;
+              &:hover {
+                background-color: var(--color-3);
+                color: var(--color-2);
+                border-color: var(--color-1);
+              }
+            }
+          }
+        }
+      }
       .product {
         width: 400px;
         align-items: end;
