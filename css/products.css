@@ -18,7 +18,7 @@
         align-items: center;
         justify-content: center;
         li {
-          width: inherit;
+          width: auto;
           margin: 0 0.5em;
           a {
             width: auto;
