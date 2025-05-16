@@ -5,6 +5,42 @@
     display: flex;
     flex-direction: column;
     gap: 28px;
+    .product-filters {
+      width: 100%;
+      max-width: 320px;
+      margin: 0 auto;
+      border-radius: 6px;
+      overflow: hidden;
+      ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        li {
+          width: inherit;
+          margin: 0 0.5em;
+          a {
+            width: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.25em 0.5em;
+            text-decoration: none;
+            background-color: var(--color-2);
+            color: var(--color-3);
+            min-width: 142px;
+            transition: all 0.3s ease;
+            &:hover,
+            &.active {
+              background-color: var(--color-3);
+              color: var(--color-2);
+              border-color: var(--color-1);
+            }
+          }
+        }
+      }
+    }
     .product {
       display: flex;
       justify-content: center;
@@ -111,33 +147,14 @@
       flex-wrap: wrap;
       justify-content: center;
       .product-filters {
-        width: 100%;
         max-width: 1024px;
-        margin: 0 auto;
+        padding: 0 1em;
         ul {
-          width: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          flex-direction: row;
           li {
-            margin: 0 1em;
             a {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              padding: 0.25em 1em;
-              text-decoration: none;
-              background-color: var(--color-2);
-              color: var(--color-3);
-              border: 2px solid var(--color-2);
-              border-radius: 12px;
-              min-width: 142px;
-              transition: all 0.3s ease;
-              &:hover {
-                background-color: var(--color-3);
-                color: var(--color-2);
-                border-color: var(--color-1);
-              }
+              border: 2px solid var(--color-1);
+              border-radius: 6px;
             }
           }
         }
@@ -145,15 +162,27 @@
       .product {
         width: 400px;
         align-items: end;
+        gap: 0;
         .card-img {
           order: -1;
           height: 300px;
           width: 200px;
+          border-radius: 10px 0 0 10px;
+          &:hover {
+            border-radius: 10px;
+          }
         }
         .card-text {
           order: 0;
           display: flex;
           flex-direction: column;
+          height: calc(100% - 16px);
+          justify-content: start;
+          border-radius: 0 10px 10px 0;
+          gap: 10px;
+          button {
+            margin-top: auto;
+          }
         }
       }
     }

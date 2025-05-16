@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Si tiene filtro, lo usamos
   if (params.has("filter")) {
     const filter = getFilterFromURL();
+    document.getElementById(filter).classList.toggle("active");
     showFilteredProducts(filter);
   }
 });
