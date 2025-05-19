@@ -1,16 +1,26 @@
+body {
+  main {
+  background: white url("../img/fondoheader_sm.jpg") repeat-x center
+  top;
+  }
+}
 .venta {
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 2em;
-    margin-top: 2em;
+    gap: 2em;
+    padding: 1em;
+    padding-top: 6em;
     .productoVenta {
         background-color: var(--color-1);
-        width: 40%;
+        width: auto;
         border-radius: 8px;
         padding: 16px;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
         .bloqueTexto {
             display: flex;
             flex-direction: column;
@@ -18,7 +28,7 @@
             color: var(--main-font-color);
             h3 {
                 color: var(--main-font-color);
-                font-size: 20px;
+                font-size: 16px;
             }
             button {
                 margin-top: 1em;
@@ -38,9 +48,11 @@
               }
         }
         .fotoProducto {
-            width: 280px;
-            height: auto;
-            border-radius: 8px;
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 12px;
+            overflow: hidden;
         }        
     }
 }
@@ -49,5 +61,30 @@
     width: 240px;
     margin-top: 1em;
     font-size: 16px;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
    
+}
+
+@media screen and (min-width: 769px){
+  .venta {
+    .productoVenta {
+      flex-wrap: nowrap;
+      align-items: flex-start;
+      .fotoProducto {
+        margin-top: 1em;
+        width: 280px;
+      }
+      .bloqueTexto {
+        display: block;
+        margin: auto 0;
+        text-align: center;
+        button {
+          min-width: 220px;
+        }
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
 }

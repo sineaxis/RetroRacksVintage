@@ -16,9 +16,38 @@
 </head>
 <body>
     <header>
-        <h1>Mercado de Segunda Mano</h1>
-        <p>Compra y vende ropa, accesorios y más</p>
-    </header>
+        <a id="logo" href="index.html"
+          ><img src="./img/svg/retroracks.svg" alt="Logo"
+        /></a>
+        <nav id="menu" class="close">
+          <ul>
+            <li>
+              <a class="active" href="index.html"
+                ><span>Inicio</span><i class="fa-solid fa-house"></i
+              ></a>
+            </li>
+            <li>
+              <a href="productos.html"
+                ><span>Productos</span><i class="fa-solid fa-shirt"></i
+              ></a>
+            </li>
+            <li>
+              <a href="venta.html"
+                ><span>Venta</span><i class="fa-solid fa-wallet"></i
+              ></a>
+            </li>
+            <li>
+              <a href="contacto.html"
+                ><span>Contacto</span><i class="fa-solid fa-paper-plane"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+        <button id="btn-menu">
+          <img src="./img/svg/clothes-icon.svg" alt="Clothes icon" />
+          <span>Menú</span>
+        </button>
+      </header>
 
     <main>
         <section class="venta">
@@ -26,9 +55,9 @@
                 <img class="fotoProducto" src="./img/venta/camisetaBlanca.jpg" alt="Camiseta blanca de Zara">
                 <div class="bloqueTexto">
                     <h3>Camiseta Blanca Zara</h3>
-                    <p class="precio">€8</p>
+                    <p class="precio">8€</p>
                     <button class="btn" onclick="toggleMensaje(this)">Ver más</button>
-                    <p class="mensaje">Sencilla, versátil y siempre a la moda. Esta camiseta blanca de algodón ofrece una comodidad excepcional y un ajuste clásico que se adapta a cualquier estilo. Ideal para combinar con jeans, chaquetas o usar como prenda básica en tu día a día.</p>       
+                    <p class="mensaje">Sencilla, versátil y siempre a la moda. Esta camiseta blanca de algodón ofrece una comodidad excepcional y un ajuste clásico que se adapta a cualquier estilo.</p>       
                 </div>
             </div>
 
@@ -36,7 +65,7 @@
                 <img class="fotoProducto" src="./img/venta/pantalonVaquero.jpg" alt="Pantalón vaquero Levi's">
                 <div class="bloqueTexto">
                     <h3>Pantalón Levi's 501</h3>
-                    <p class="precio">€15</p>
+                    <p class="precio">15€</p>
                     <button class="btn" onclick="toggleMensaje(this)">Ver más</button>
                     <p class="mensaje">Un clásico que nunca falla. Este pantalón vaquero combina estilo y resistencia con un corte moderno y cómodo. Fabricado con denim de alta calidad, es ideal tanto para looks casuales como para outfits más urbanos.</p> 
                 </div>
@@ -46,7 +75,7 @@
                 <img class="fotoProducto" src="./img/venta/bolsoPielNegro.jpg" alt="Bolso negro de piel">
                 <div class="bloqueTexto">
                     <h3>Bolso de Piel Negro</h3>
-                    <p class="precio">€14</p>
+                    <p class="precio">14€</p>
                     <button class="btn" onclick="toggleMensaje(this)">Ver más</button>
                     <p class="mensaje">Esto es un bolso de piel negra de Cachemir diseñado y confeccionado en nuestras mejores empresas textiles.</p>
                 </div>
@@ -54,6 +83,17 @@
             <!-- Puedes añadir más productos aquí -->
         </section>
     </main>
+    <footer>
+        <p>&copy;2025 Retro Racks Vintage</p>
+        <nav>
+          <ul>
+            <li><a href="#">Aviso legal</a></li>
+            <li><a href="#">Política de cookies</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </footer>
     <script src="./js/main.js"></script>
     <script>
         function toggleMensaje(boton) {
