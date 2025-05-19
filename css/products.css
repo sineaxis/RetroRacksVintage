@@ -1,11 +1,11 @@
-.product-outer {
+.products-outer {
   background: white url("../img/fondoheader_sm.jpg") repeat-x center top;
-  .product-list {
+  .products-list {
     padding: 4.5em 1em 1em;
     display: flex;
     flex-direction: column;
     gap: 28px;
-    .product-filters {
+    .products-filters {
       width: 100%;
       max-width: 320px;
       margin: 0 auto;
@@ -137,16 +137,16 @@
 }
 
 @media screen and (min-width: 769px) {
-  .product-outer {
+  .products-outer {
     padding: 0 0 3em;
-    .product-list {
+    .products-list {
       width: 100%;
       max-width: 1024px;
       margin: 0 auto;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
-      .product-filters {
+      .products-filters {
         max-width: 1024px;
         padding: 0 1em;
         ul {
