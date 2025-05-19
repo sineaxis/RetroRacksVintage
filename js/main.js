@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
       addToCart(product);
     });
   });
-  if (document.getElementById("products")) {
+  if (document.getElementById("productspage")) {
     updateCartCount();
   }
 });
