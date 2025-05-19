@@ -27,7 +27,8 @@
                 <div class="bloqueTexto">
                     <h3>Camiseta Blanca Zara</h3>
                     <p class="precio">€8</p>
-                    <button class="btn">Ver más</button>       
+                    <button class="btn" onclick="toggleMensaje(this)">Ver más</button>
+                    <p class="mensaje">Sencilla, versátil y siempre a la moda. Esta camiseta blanca de algodón ofrece una comodidad excepcional y un ajuste clásico que se adapta a cualquier estilo. Ideal para combinar con jeans, chaquetas o usar como prenda básica en tu día a día.</p>       
                 </div>
             </div>
 
@@ -36,7 +37,8 @@
                 <div class="bloqueTexto">
                     <h3>Pantalón Levi's 501</h3>
                     <p class="precio">€15</p>
-                    <button class="btn">Ver más</button>
+                    <button class="btn" onclick="toggleMensaje(this)">Ver más</button>
+                    <p class="mensaje">Un clásico que nunca falla. Este pantalón vaquero combina estilo y resistencia con un corte moderno y cómodo. Fabricado con denim de alta calidad, es ideal tanto para looks casuales como para outfits más urbanos.</p> 
                 </div>
             </div>
 
@@ -45,7 +47,7 @@
                 <div class="bloqueTexto">
                     <h3>Bolso de Piel Negro</h3>
                     <p class="precio">€14</p>
-                    <button class="btn" onclick="mostrarMensaje(this)">Ver más</button>
+                    <button class="btn" onclick="toggleMensaje(this)">Ver más</button>
                     <p class="mensaje">Esto es un bolso de piel negra de Cachemir diseñado y confeccionado en nuestras mejores empresas textiles.</p>
                 </div>
             </div>
@@ -54,9 +56,16 @@
     </main>
     <script src="./js/main.js"></script>
     <script>
-        function mostrarMensaje(boton) {
-            const mensaje = boton.nextElementSibling; // El <p> justo después del botón
-            mensaje.style.display = "block";
+        function toggleMensaje(boton) {
+            const mensaje = boton.nextElementSibling;
+
+            if (mensaje.style.display === "block") {
+                mensaje.style.display = "none";
+                boton.textContent = "Ver más";
+            } else {
+                mensaje.style.display = "block";
+                boton.textContent = "Ocultar";
+            }
         }
     </script>
 </body>
